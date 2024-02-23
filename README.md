@@ -64,5 +64,5 @@ BudgetBuddy is a simple CRUD application created to help users manage their fina
 
 ## Demo Video
 
-[![Demo Video](https://i.vimeocdn.com/video/916001795.jpg)](https://vimeo.com/916001795)
+[Watch Demo Video](https://player.vimeo.com/video/916001795)
 
