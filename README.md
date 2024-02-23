@@ -40,11 +40,7 @@ BudgetBuddy is a simple CRUD application created to help users manage their fina
 
 ### Setup
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/budget-tracker-app.git
-
+1. Clone the repository.
 2. Navigate to the client directory and run the following commands:
 
    ```bash
@@ -52,7 +48,7 @@ BudgetBuddy is a simple CRUD application created to help users manage their fina
    npm i
    ng serve
 
-3. Install MySQL and create a new database named budgetbuddy
+3. Install MySQL and create a new database named budgetbuddy.
 4. Configure the application to connect to the MySQL database by updating the `application.yml` file with your own credentials:
 
    ```yaml
