@@ -1,0 +1,10 @@
+<p-dialog [header]="(category? 'Modify' : 'Add') + ' Category'" [(visible)]="visible" [modal]="true" [style]="{ width: '29vw' }" [draggable]="false" [resizable]="false" (onHide)="hideModal()" class="category-modal">
+  <input type="text" pInputText [(ngModel)]="name" placeholder="Enter the name" />
+  <div class="button-grp">
+    <p-button *ngIf="!category; else elseBlock" icon="pi pi-check" iconPos="right" [rounded]="true" (onClick)="save()"></p-button>
+    <ng-template #elseBlock>
+      <p-button icon="pi pi-trash" iconPos="right" [rounded]="true" severity="danger" (onClick)="delete()"></p-button>
+      <p-button icon="pi pi-pencil" iconPos="right" [rounded]="true" (onClick)="modify()"></p-button>
+    </ng-template>
+  </div>
+</p-dialog>

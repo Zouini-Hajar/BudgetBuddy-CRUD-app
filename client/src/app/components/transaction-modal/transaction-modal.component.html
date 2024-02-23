@@ -1,0 +1,37 @@
+<p-dialog [header]="(transaction ? 'Modify' : 'Add') + ' Transaction'" [(visible)]="visible" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" (onHide)="hideModal()">
+  <div class="input-elm">
+    <label for="type">Type</label>
+    <div class="radio-grp">
+      <div>
+        <p-radioButton name="type" value="income" [(ngModel)]="type" inputId="income"></p-radioButton>
+        <label for="income" class="">Income</label>
+      </div>
+      <div>
+        <p-radioButton name="type" value="expense" [(ngModel)]="type" inputId="expense"></p-radioButton>
+        <label for="expense" class="">Expense</label>
+      </div>
+    </div>
+  </div>
+  <div class="input-elm">
+    <label for="description">Description</label>
+    <input pInputText id="description" placeholder="Enter the description" [(ngModel)]="description" />
+  </div>
+  <div class="input-elm inline">
+    <div class="input-elm">
+      <label for="amount">Amount</label>
+      <p-inputNumber [(ngModel)]="amount" inputId="amount" mode="decimal" [minFractionDigits]="2"
+        [maxFractionDigits]="5" placeholder="Amount"></p-inputNumber>
+    </div>
+    <div class="input-elm">
+      <label for="category">Category</label>
+      <p-dropdown [options]="categories" [(ngModel)]="category" optionLabel="name" [editable]="true" [showClear]="true" placeholder="Select a Category"></p-dropdown>
+    </div>
+  </div>
+  <div class="input-elm">
+    <label for="date">Date</label>
+    <p-calendar [(ngModel)]="date" [iconDisplay]="'input'" [showIcon]="true" placeholder="Select the date"></p-calendar>
+  </div>
+  <div class="button-elm">
+    <p-button label="Save" icon="pi pi-check" iconPos="right" [rounded]="true" (onClick)="save()"></p-button>
+  </div>
+</p-dialog>

@@ -1,0 +1,30 @@
+.input-elm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.inline {
+  flex-direction: row;
+  gap: 0.8rem;
+  margin-bottom: 0;
+}
+
+.input-elm > label {
+  font-weight: 550;
+  margin-bottom: 0.8rem;
+}
+
+.radio-grp {
+  display: flex;
+  gap: 1rem;
+}
+
+.radio-grp label {
+  margin-left: 0.4rem;
+}
+
+.button-elm {
+  display: flex;
+  justify-content: flex-end;
+}

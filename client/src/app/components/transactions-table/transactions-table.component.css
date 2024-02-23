@@ -1,0 +1,21 @@
+.table-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-caption p {
+  color: var(--primary-color);
+}
+
+th, td {
+  text-align: center;
+}
+
+.income {
+  color: rgb(104, 201, 104);
+}
+
+.expense {
+  color: rgb(211, 79, 79);
+}

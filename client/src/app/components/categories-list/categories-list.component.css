@@ -1,0 +1,37 @@
+.categs-container {
+  margin-left: 2rem;
+}
+
+.categs-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categs-caption p {
+  color: var(--primary-color);
+}
+
+.categs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.categ {
+  text-align: center;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 350;
+  border-radius: var(--border-radius);
+  padding: 0.6rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.categ:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+}

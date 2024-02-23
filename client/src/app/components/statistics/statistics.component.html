@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngFor="let item of items">
+    <div class="icon">
+      <i [class]="item.icon"></i>
+    </div>
+    <div>
+      <small>{{item.title}}</small>
+      <p>{{item.total}}</p>
+    </div>
+  </div>
+</div>

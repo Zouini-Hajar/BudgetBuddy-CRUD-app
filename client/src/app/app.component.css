@@ -1,0 +1,22 @@
+header {
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+header i, header span {
+  color: var(--primary-color);
+}
+
+header i {
+  margin-right: 0.5rem;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+.content {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}

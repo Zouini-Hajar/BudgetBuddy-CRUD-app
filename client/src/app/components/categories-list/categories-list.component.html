@@ -1,0 +1,12 @@
+<div class="categs-container">
+  <div class="categs-caption">
+    <p>Categories</p>
+    <p-button size="small" icon="pi pi-plus" [rounded]="true" [text]="true" (onClick)="showDialog()"></p-button>
+  </div>
+  <div class="categs-list">
+    <div class="categ" *ngFor="let category of categories" (click)="modifyCategory(category)">
+      {{category.name}}
+    </div>
+  </div>
+</div>
+<app-category-modal [category]="selectedCategory" (categoryChange)="selectedCategory=$event" [visible]="visible" (visibleChange)="visible=$event"></app-category-modal>
