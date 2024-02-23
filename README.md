@@ -35,7 +35,6 @@ BudgetBuddy is a simple CRUD application created to help users manage their fina
 - [Node.js](https://nodejs.org/) installed on your machine
 - [Angular CLI](https://angular.io/cli) installed globally
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) installed
-- [Spring Boot](https://spring.io/projects/spring-boot) installed
 - [MySQL](https://www.mysql.com/) installed locally
 
 ### Setup
@@ -64,3 +63,6 @@ BudgetBuddy is a simple CRUD application created to help users manage their fina
    ./mvnw spring-boot:run
 
 ## Demo Video
+
+[![Demo Video](https://i.vimeocdn.com/video/916001795.jpg)](https://vimeo.com/916001795)
+
