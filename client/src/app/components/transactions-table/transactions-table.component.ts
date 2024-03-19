@@ -68,7 +68,7 @@ export class TransactionsTableComponent {
     this.transactionService.deleteTransaction(id)
         .subscribe(err => console.log(err));
     
-    //window.location.reload();
+    window.location.reload();
   }
 
   showDialog() {
